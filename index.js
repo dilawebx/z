@@ -20,28 +20,27 @@ const {
     fetchLatestBaileysVersion,
     Browsers
   } = require('@whiskeysockets/baileys')
-  
-  
-  const l = console.log
-  const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions')
-  const { AntiDelDB, initializeAntiDeleteSettings, setAnti, getAnti, getAllAntiDeleteSettings, saveContact, loadMessage, getName, getChatSummary, saveGroupMetadata, getGroupMetadata, saveMessageCount, getInactiveGroupMembers, getGroupMembersMessageCount, saveMessage } = require('./data')
-  const fs = require('fs')
-  const ff = require('fluent-ffmpeg')
-  const P = require('pino')
-  const config = require('./config')
-  const qrcode = require('qrcode-terminal')
-  const StickersTypes = require('wa-sticker-formatter')
-  const util = require('util')
-  const { sms, downloadMediaMessage, AntiDelete } = require('./lib')
-  const FileType = require('file-type');
-  const axios = require('axios')
-  const { File } = require('megajs')
-  const { fromBuffer } = require('file-type')
-  const bodyparser = require('body-parser')
-  const os = require('os')
-  const Crypto = require('crypto')
-  const path = require('path')
-  const prefix = config.PREFIX
+  const moment = require('moment-timezone');
+const { cmd, commands } = require('../command')
+const config = require('../config');
+const { downloadMediaMessage } = require('@whiskeysockets/baileys');
+const fs = require('fs');
+const path = require('path');
+const webp = require('node-webpmux');
+const sharp = require('sharp');
+const axios = require('axios');
+const yts = require("yt-search");
+const xml2js = require('xml2js');
+const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson} = require('../lib/functions');
+const fg = require('api-dylux');
+const cheerio = require('cheerio')
+const vm = require('vm')
+let { img2url } = require('@blackamda/telegram-image-url');
+var imgmsg ="*Give me a anime name !*"
+var descgs = "It gives details of given anime name."
+var cants = "I cant find this anime."
+const { ytsearch, ytmp3, ytmp4 } = require('@dark-yasiya/yt-dl.js');
+const fetch = require('node-fetch');
   
   const ownerNumber = ['94774575878']
   
