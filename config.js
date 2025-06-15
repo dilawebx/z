@@ -35,11 +35,11 @@ DELETE_LINKS: process.env.DELETE_LINKS || "false",
 // automatic delete links witho remove member 
 OWNER_NUMBER: process.env.OWNER_NUMBER || "94760224138",
 // add your bot owner number
-OWNER_NAME: process.env.OWNER_NAME || "chamindu ",
+OWNER_NAME: process.env.OWNER_NAME || "dila ",
 // add bot owner name
 DESCRIPTION: process.env.DESCRIPTION || "*© ᴘᴏᴡᴇʀᴇᴅ ʙʏ dila *",
 // add bot owner name    
-ALIVE_IMG: process.env.ALIVE_IMG || "https://i.ibb.co/5XNzHkVp/3908.jpg",
+ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/k1azkj.jpg",
 // add img for alive msg
 LIVE_MSG: process.env.LIVE_MSG || "> Zinda Hun Yar *SIMI*⚡",
 // add alive msg here 
